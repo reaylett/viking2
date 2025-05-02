@@ -24,6 +24,8 @@ public class axeinteractions : MonoBehaviour
      public void Selected()
     {
         Debug.Log("Selected");
+
+        GetComponent<Renderer>().material.SetColor("_BaseColor", Color.yellow);
     }
 
      public void Activated()
